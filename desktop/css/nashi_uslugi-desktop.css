@@ -1,0 +1,390 @@
+.hero button {
+  margin-top: 24px;
+}
+
+.miniGrid_section {
+  margin-top: 70px;
+}
+
+.miniGrid_section .customMiniContainer {
+  display: grid;
+  grid-template-columns: .6fr .4fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.miniGrid_image {
+  position: relative;
+  width: 100%;
+  height: 440px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.miniGrid_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.miniGrid_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.miniGrid_content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.miniGrid_content div p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.miniGrid_content button {
+  margin-top: 40px;
+}
+
+.full_banner_section {
+  margin-top: 70px;
+  background-color: var(--dark-blue);
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.full_banner_section img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 50%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.full_banner_section .customContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.full_banner_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  color: var(--white);
+  margin: 40px 100px 40px auto;
+}
+
+.full_banner_content h2 {
+  color: currentColor;
+}
+
+.full_banner_content button {
+  max-width: 320px;
+  width: 100%;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textDiv p {
+  font-size: 16px;
+  line-height: 24px;
+  color: currentColor;
+}
+
+.full_banner_image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gridSection {
+  margin-top: 70px;
+}
+
+.gridSection .customContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.gridDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.gridDiv .textDiv {
+  margin-top: 25px;
+}
+
+.gridDiv_content {
+  width: 100%;
+}
+
+.gridDiv button {
+  margin-top: 35px;
+}
+
+.gridDiv_image {
+  position: relative;
+  width: 100%;
+  height: 470px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gridDiv_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom_linkSection {
+  margin-top: 70px;
+}
+
+.bottom_linkContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 34px 20px;
+  color: var(--black);
+}
+
+.bottom_linkContent p {
+  color: currentColor;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.bottom_linkContent a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: currentColor;
+  transition: .3s;
+  position: relative;
+}
+
+.bottom_linkContent a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scale(0, 1);
+  background-color: var(--black);
+  transition: .5s;
+}
+
+.bottom_linkContent a:hover::after {
+  content: "";
+  transform: scale(1, 1);
+  transition: .5s;
+}
+
+
+.fullBanner {
+  margin-top: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.fullBanner .customContainer {
+  padding-block: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.fullBanner button {
+  margin-top: 40px;
+}
+
+.fullBanner h2 {
+  color: var(--white);
+}
+
+.fullBanner p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white);
+}
+
+.fb_background {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg_blue {
+  background-color: var(--dark-blue);
+}
+
+.fullBanner .textDiv {
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .gridDiv_image {
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 430px;
+  }
+  .miniGrid_section, .full_banner_section, .gridSection, .bottom_linkSection {
+    margin-top: 40px;
+  }
+  .miniGrid_section .customMiniContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .full_banner_section {
+    height: 865px;
+  }
+  .full_banner_section img {
+    right: auto;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    max-height: 500px;
+    height: 100%;
+    max-width: 100%;
+  }
+  .full_banner_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    margin: 0;
+  }
+  .full_banner_content .textDiv p {
+    text-align: center;
+  }
+  .full_banner_section .customContainer {
+    grid-template-columns: 1fr;
+  }
+  .gridDiv {
+    grid-template-columns: 1fr;
+  }
+  .gridDiv:first-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .gridDiv button {
+    margin-top: 25px;
+  }
+  .miniGrid_content button {
+    display: none;
+  }
+  .gridDiv_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .gridDiv_content .textDiv p {
+    text-align: center;
+  }
+  .textDiv {
+    gap: 12px;
+  }
+  .bottom_linkContent p {
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .fullBanner {
+    height: 780px;
+  }
+  .fullBanner .customContainer, .fb_background {
+    grid-template-columns: 1fr;
+  }
+  .bg_img img {
+    object-fit: fill;
+  }
+  .fullBanner button {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 580px) {
+  .fullBanner {
+    height: 800px;
+  }
+  .bg_img img {
+    object-fit: cover;
+  }
+  .fullBanner p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .miniGrid_image {
+    height: 240px;
+  }
+  .miniGrid_section .customMiniContainer {
+    gap: 20px;
+  }
+  .gridDiv_content h2 {
+    text-align: center;
+  }
+  .miniGrid_content div p {
+    font-size: 14px;
+    line-height: 21px;
+  }  
+  .gridDiv_image {
+    height: 200px;
+  }
+  .bottom_linkContent p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+

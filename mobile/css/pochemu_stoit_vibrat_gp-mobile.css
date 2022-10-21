@@ -1,0 +1,84 @@
+.hero {
+  min-height: 600px;
+}
+
+.hero h1, .cardsSection h2, .moreSection h2 {
+  text-align: center;
+}
+
+.moreSection button {
+  margin-top: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.hero_reklama {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.hero_reklama p {
+  padding: 0;
+}
+
+.bigger_title {
+  font-size: 20px !important;
+  line-height: 28px !important;
+  font-weight: 500 !important;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.cardsSection, .cardsContainer, .moreSection {
+  margin-top: 30px;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card_title {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+  color: currentColor;
+}
+
+.card_desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: currentColor;
+}
+
+.card_image {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.card_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card.gray {
+  background-color: #F8F8FB;
+  color: var(--dark-blue);
+}
+
+.card.blue {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.card.orange {
+  background-color: var(--orange);
+  color: var(--dark-blue);
+}

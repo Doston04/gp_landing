@@ -1,0 +1,201 @@
+.hero h1 {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.hero_reklama {
+  text-align: center;
+  padding: 34px 0;
+}
+
+.hero_reklama p {
+  padding: 0;
+}
+
+.bigger_title {
+  font-size: 36px !important;
+  line-height: 50px !important;
+  font-weight: 500 !important;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.cardsSection h2 {
+  text-align: center;
+}
+
+.cardsSection {
+  margin-top: 70px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 330px;
+}
+
+.card.bg_gray {
+  background-color: #F8F8FB;
+}
+
+.card.bg_blue {
+  background-color: var(--dark-blue);
+}
+
+.card.bg_orange {
+  background-color: var(--orange);
+}
+
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section, .swiperSection {
+  margin-top: 70px;
+}
+
+.section .customContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.section h2 {
+  text-align: center;
+}
+
+.swiperSection .biggerContainer {
+  padding-block: 50px;
+}
+
+/* ----------- */
+.fullBanner {
+  position: relative;
+  z-index: 1;
+}
+
+.fullBanner.blue {
+  color: var(--white);
+}
+
+.fullBanner .customContainer {
+  padding-block: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.fullBanner h2 {
+  color: currentColor;
+  text-align: left;
+}
+
+.fullBanner p {
+  font-size: 18px;
+  line-height: 27px;
+  color: currentColor;
+}
+
+.fb_background {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg_blue {
+  background-color: var(--dark-blue);
+}
+
+.bg_orange {
+  background-color: var(--orange);
+}
+
+.bg_gray {
+  background-color: #F8F8FB;
+}
+
+.fullBanner .textDiv {
+  margin-top: 15px;
+}
+
+.fullBanner.gray p {
+  color: var(--black);
+}
+
+.fullBanner.gray h2 {
+  color: var(--dark-blue);
+}
+
+.fullBanner.orange h2, .fullBanner.orange p {
+  color: var(--dark-blue);
+}
+
+@media (max-width: 992px) {
+  .hero {
+    min-height: 550px;
+  }
+  .hero_content {
+    padding-block: 30px;
+  }
+  .bigger_title {
+    font-size: 24px !important;
+    line-height: 33px !important;
+  }
+  .fullBanner .customContainer {
+    gap: 60px;
+    padding-block: 80px;
+  }
+  .fullBanner p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .fullBanner .textDiv {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .cardsContainer {
+    overflow-x: scroll;
+  }
+  .fullBanner {
+    min-width: 800px;
+    overflow-x: scroll;
+  }
+  .fullBanner .customContainer {
+    padding-block: 40px;
+  }
+}

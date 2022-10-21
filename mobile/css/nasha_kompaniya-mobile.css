@@ -1,0 +1,146 @@
+.hero {
+  height: 250px;
+}
+
+.hero h1 {
+  text-align: center;
+}
+
+.ourMission_cardDiv, .missionSection, .historySection, .bannerSection {
+  margin-top: 30px;
+}
+
+.missionSection h2, .historySection h2 {
+  text-align: center;
+}
+
+.historySection .infoDiv {
+  gap: 8px;
+}
+
+.infoDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  margin-top: 15px;
+}
+
+.bannerSection {
+  background-color: var(--dark-blue);
+}
+
+.bannerSection .customMiniContainer {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.banner_content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: var(--white);
+}
+
+.banner_content h2 {
+  text-align: center;
+  color: currentColor;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.textDiv p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.banner_image {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.banner_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission_Card {
+  padding: 25px 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: var(--dark-blue);
+  z-index: 1;
+}
+
+.mission_Card:nth-child(2) {
+  color: var(--white);
+}
+
+.mission_Card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.mission_Card div p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.mission_Card h2 {
+  text-align: center;
+  color: currentColor;
+}
+
+.mission_Card button {
+  margin-top: 25px;
+}
+
+.mission_Card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.motto {
+  padding-top: 30px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--dark-blue);
+  text-align: center;
+}

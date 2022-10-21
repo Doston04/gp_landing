@@ -1,0 +1,187 @@
+.hero {
+  min-height: 600px;
+}
+
+.hero_content h1 {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.gridSection {
+  margin-top: 40px;
+}
+
+.gridSection .customContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.textDiv p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--dark-blue);
+}
+
+.grid_image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full_banner_section.gray {
+  background-color: #f8f8fb;
+}
+
+.full_banner_section.blue {
+  background-color: var(--dark-blue);
+  margin-top: 40px;
+}
+
+.full_banner_section.blue h2 {
+  color: var(--white);
+}
+
+.full_banner_section .textDiv {
+  margin-top: 18px;
+  gap: 0;
+}
+
+.full_banner_section .textDiv p {
+  color: var(--black);
+}
+
+.full_banner_section .customMiniContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.full_banner_image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.full_banner_image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.functions_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.function {
+  display: flex;
+  gap: 16px;
+}
+
+.function_icon {
+  width: 20px;
+  height: 20px;
+}
+
+.function_text {
+  width: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--white);
+}
+
+.fullBanner {
+  margin-top: 70px;
+  position: relative;
+  z-index: 1;
+  height: 760px;
+}
+
+.fullBanner .customContainer {
+  padding-block: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.fullBanner button {
+  margin-top: 20px;
+}
+
+.fullBanner h2 {
+  color: var(--white);
+}
+
+.fullBanner p {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--white);
+}
+
+.fb_background {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg_img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bg_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg_blue {
+  background-color: var(--dark-blue);
+}

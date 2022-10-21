@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация компании</title>
+  <link rel="stylesheet" href="/static/main.css">
+  <link rel="stylesheet" href="/desktop/css/register-desktop.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <div class="formSection">
+      <div class="customContainer">
+        <div class="formTextDiv">
+          <h1>Регистрация компании</h1>
+          <div class="textDiv">
+            <p>Пожалуйста, заполните все поля, помеченные звездочкой</p>
+            <p>Обратите внимание, что данный раздел предназначен для добавления в базу данных Golden Pages только тех компаний, которые зарегистрированы на территории Узбекистана. Заполните все поля отмеченные звездочкой и отправьте нам. После проверки нашими сотрудниками Ваша компания попайдет на сайт.</p>
+          </div>
+        </div>
+        <form class="form">
+          <div class="grid2">
+            <div class="inp_label">
+              <label for="title">Название компании <sup class="red">*</sup></label>
+              <input type="text" id="title" required>
+            </div>
+            <div class="inp_label">
+              <label for="form">Форма собственности <sup class="red">*</sup></label>
+              <input type="text" id="form" required>
+            </div>
+            <div class="inp_label">
+              <label for="inn">ИНН <sup class="red">*</sup></label>
+              <input type="text" id="inn" required>
+            </div>
+            <div class="inp_label">
+              <label for="address">Адрес: Улица, дом <sup class="red">*</sup></label>
+              <input type="text" id="address" required>
+            </div>
+            <div class="inp_label">
+              <label for="orientir">Ориентиры</label>
+              <input type="text" id="orientir">
+            </div>
+            <div class="inp_label">
+              <label for="index">Индекс</label>
+              <input type="text" id="index">
+            </div>
+            <div class="inp_label">
+              <label for="city">Город <sup class="red">*</sup></label>
+              <input type="text" id="city" required>
+            </div>
+            <div class="inp_label">
+              <label for="phone-mask">Телефон <sup class="red">*</sup></label>
+              <input type="text" id="phone-mask" required>
+            </div>
+            <div class="inp_label">
+              <label for="fax">Факс</label>
+              <input type="text" id="fax">
+            </div>
+            <div class="inp_label">
+              <label for="email">Контактный e-mail отправителя письма <sup class="red">*</sup></label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="inp_label">
+              <label for="website">Веб - сайт</label>
+              <input type="text" id="website">
+            </div>
+          </div>
+          <div class="big_container">
+            <div class="inp_label">
+              <label for="organisation">Виды деятельности организации/компании <sup class="red">*</sup></label>
+              <textarea name="organisation" id="organisation" cols="30" rows="10"></textarea>
+            </div>
+            <div class="grid2">
+              <div class="inp_label">
+                <label for="director">КРуководитель компании (должность и ФИО)</label>
+                <input type="text" id="director" required>
+              </div>
+              <div class="inp_label">
+                <label for="manager">Контактное лицо (должность и ФИО)</label>
+                <input type="text" id="manager" required>
+              </div>
+              <div class="inp_label">
+                <label for="employee">Количество сотрудников</label>
+                <input type="text" id="employee" required>
+              </div>
+            </div>
+            <div class="inp_label">
+              <label for="more">Дополнительно</label>
+              <textarea name="organisation" id="more" cols="30" rows="10"></textarea>
+            </div>
+            <div class="captcha"></div> <!-- Внутры этого дива поставьте каптчу -->
+            <button class="orange_btn" type="submit">Отправить запрос</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="https://unpkg.com/imask"></script>
+  <script>
+    var phoneMask = IMask(
+      document.getElementById('phone-mask'), {
+        mask: '+{998}(00) 000-00-00'
+      });
+  </script>
+</body>

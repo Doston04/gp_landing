@@ -1,0 +1,60 @@
+main {
+  padding-bottom: 0;
+}
+
+.hero {
+  height: 300px;
+}
+
+.banner.bg_orange {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.banner.bg_gray {
+  background-color: #EFEFEF;
+  color: var(--black);
+}
+
+.banner.bg_blue {
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.banner {
+  padding: 30px 20px;
+}
+
+.banner_title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+  text-align: center;
+  color: currentColor;
+}
+
+.banner div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.banner div p {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: currentColor;
+}
+
+.banner_number {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 800;
+  color: currentColor;
+  text-align: center;
+}

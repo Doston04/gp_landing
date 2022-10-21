@@ -1,0 +1,169 @@
+.hero button {
+  margin-top: 24px;
+}
+
+.tableSection {
+  margin-top: 70px;
+}
+
+.tableSection h2 {
+  text-align: center;
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.landing_table tr {
+  display: grid;
+  grid-template-columns: 14% 24% 20% 20% 22%;
+}
+
+.landing_table tr td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadSection {
+  margin-top: 50px;
+}
+
+.downloadSection .customContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadSection h2 { 
+  text-align: center;
+}
+
+.downloadSection p {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-blue);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 24px;
+}
+
+.buttons button {
+  min-width: 270px;
+}
+
+.dowload_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  padding: 16px 32px;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 270px;
+  transition: .3s;
+}
+
+.dowload_btn:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transition: .3s;
+}
+
+.bannerSection {
+  margin-top: 70px;
+}
+
+.bannerSection h2 {
+  text-align: center;
+}
+
+.banner_desc {
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--dark-blue);
+  max-width: 990px;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.banner_info {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  margin-top: 25px;
+}
+
+.bannerSection a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  color: var(--dark-blue);
+  margin-top: 10px;
+}
+
+.bannerSection a:hover {
+  text-decoration: underline;
+}
+
+.bannerSection .customMiniContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+}
+
+@media (max-width: 992px) {
+  .buttons {
+    gap: 20px;
+  }
+  .downloadSection p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 550px;
+  }
+} 
+
+@media (max-width: 580px) {
+  .bannerSection, .downloadSection, .tableSection {
+    margin-top: 30px;
+  }
+  .buttons {
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .buttons button {
+    min-width: 100%;
+    width: 100%;
+  }
+  .dowload_btn {
+    min-width: 100%;
+    width: 100%;
+  }
+  .banner_desc, .banner_info {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
